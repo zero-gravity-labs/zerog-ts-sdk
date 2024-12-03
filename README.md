@@ -7,8 +7,9 @@ This is the JavaScript SDK for 0g-storage. Features include:
 - [x] RPC methods support
 - [x] File upload
 - [x] Support browser environment
-- [ ] Tests for different environments
 - [x] File download
+- [ ] Tests for different environments
+
 
 ## Install
 
@@ -72,6 +73,7 @@ if (err !== null) {
 Upload data to 0g-kv:
 
 ```js
+import { Batcher,KvClient } from '@0glabs/0g-ts-sdk';
 var [nodes, err] = await indexer.selectNodes(1);
 if (err !== null) {
     console.log("Error selecting nodes: ", err);
