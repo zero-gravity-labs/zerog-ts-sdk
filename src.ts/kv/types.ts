@@ -1,5 +1,5 @@
-import { ethers } from 'ethers'
-
+import pkg from 'ethers';
+const { ethers } = pkg;
 // Assuming common.Hash and common.Address are hex strings
 type Hash = string
 type Address = string

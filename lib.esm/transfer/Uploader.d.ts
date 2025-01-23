@@ -2,7 +2,8 @@ import { StorageNode, SegmentWithProof, FileInfo } from '../node/index.js';
 import { FixedPriceFlow } from '../contracts/flow/FixedPriceFlow.js';
 import { RetryOpts } from '../types.js';
 import { MerkleTree } from '../file/index.js';
-import { ethers } from 'ethers';
+import pkg from 'ethers';
+const { ethers } = pkg;
 import { UploadOption, UploadTask } from './types.js';
 import { AbstractFile } from '../file/AbstractFile.js';
 export declare class Uploader {

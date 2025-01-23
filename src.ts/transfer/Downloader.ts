@@ -2,7 +2,8 @@ import fs from 'fs'
 import { DEFAULT_SEGMENT_MAX_CHUNKS, DEFAULT_CHUNK_SIZE } from '../constant.js'
 import { GetSplitNum, checkExist } from '../utils.js'
 import { StorageNode, Segment, FileInfo } from '../node/index.js'
-import { decodeBase64 } from 'ethers'
+import pkg from 'ethers';
+const { decodeBase64 } = pkg;
 import { Hash } from '../types.js'
 import { getShardConfigs } from './utils.js'
 import { ShardConfig } from '../common/index.js'

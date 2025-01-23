@@ -1,4 +1,5 @@
-import { ethers } from 'ethers';
+import pkg from 'ethers';
+const { ethers } = pkg;
 import { MAX_KEY_SIZE, MAX_SET_SIZE, STREAM_DOMAIN } from './constants.js';
 import { StreamData } from './types.js';
 export class StreamDataBuilder {

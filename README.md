@@ -26,7 +26,8 @@ Use `ZgFile` to create a file object, then call `merkleTree` method to get the m
 
 ```js
 import { Indexer, ZgFile } from '@0glabs/0g-ts-sdk';
-import { ethers } from 'ethers';
+import pkg from 'ethers';
+const { ethers, BrowserProvider } = pkg;
 import { exit } from 'process';
 
 const file = await ZgFile.fromFilePath(<file_path>);

@@ -5,7 +5,8 @@ import { UploadOption, Uploader } from '../transfer/index.js';
 import { StorageNode } from '../node/index.js';
 import { RetryOpts } from '../types.js';
 import { AbstractFile } from '../file/AbstractFile.js';
-import { ethers } from 'ethers';
+import pkg from 'ethers';
+const { ethers } = pkg;
 export declare class Indexer extends HttpProvider {
     constructor(url: string);
     getShardedNodes(): Promise<ShardedNodes>;

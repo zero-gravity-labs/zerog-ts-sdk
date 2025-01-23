@@ -1,4 +1,5 @@
-import { ethers } from 'ethers'
+import pkg from 'ethers';
+const { ethers } = pkg;
 
 export interface UploadTask {
     clientIndex: number

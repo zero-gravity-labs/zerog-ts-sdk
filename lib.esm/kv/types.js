@@ -1,4 +1,5 @@
-import { ethers } from 'ethers';
+import pkg from 'ethers';
+const { ethers } = pkg;
 var AccessControlType;
 (function (AccessControlType) {
     AccessControlType[AccessControlType["GrantAdminRole"] = 0] = "GrantAdminRole";

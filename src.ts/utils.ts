@@ -1,9 +1,9 @@
-import { Signer } from 'ethers'
 import { FixedPriceFlow__factory } from './contracts/flow/index.js'
 import { FixedPrice__factory } from './contracts/market/index.js'
 import fs from 'fs'
 import path from 'path'
-import { ContractRunner } from 'ethers'
+import pkg from 'ethers';
+const { Signer, ContractRunner } = pkg;
 
 export function getFlowContract(address: string, signer: Signer) {
     return FixedPriceFlow__factory.connect(address, signer)

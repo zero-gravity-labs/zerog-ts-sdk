@@ -1,4 +1,5 @@
-import { BytesLike } from 'ethers'
+import pkg from 'ethers';
+const { BytesLike } = pkg;
 import { MerkleTree } from './MerkleTree.js'
 import {
     SubmissionNodeStruct,

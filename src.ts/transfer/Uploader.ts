@@ -8,7 +8,8 @@ import { FixedPriceFlow } from '../contracts/flow/FixedPriceFlow.js'
 import { delay, getMarketContract } from '../utils.js'
 import { RetryOpts } from '../types.js'
 import { MerkleTree, numSplits } from '../file/index.js'
-import { encodeBase64, ethers } from 'ethers'
+import pkg from 'ethers';
+const { encodeBase64, ethers } = pkg;
 import { calculatePrice, getShardConfigs } from './utils.js'
 import { UploadOption, UploadTask } from './types.js'
 import { AbstractFile } from '../file/AbstractFile.js'

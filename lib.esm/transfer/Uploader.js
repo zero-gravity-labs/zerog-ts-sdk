@@ -1,7 +1,8 @@
 import { DEFAULT_SEGMENT_SIZE, DEFAULT_SEGMENT_MAX_CHUNKS, DEFAULT_CHUNK_SIZE, } from '../constant.js';
 import { delay, getMarketContract } from '../utils.js';
 import { numSplits } from '../file/index.js';
-import { encodeBase64, ethers } from 'ethers';
+import pkg from 'ethers';
+const { encodeBase64, ethers } = pkg;
 import { calculatePrice, getShardConfigs } from './utils.js';
 import { checkReplica } from '../common/index.js';
 export class Uploader {
